@@ -607,7 +607,7 @@ abstract class BaseCommand implements CommandInterface
      */
     private function progress(int $percent): void
     {
-        if ($percent < 0 || $percent > 100) throw new \InvalidArgumentException("Argument {$percent} is out of range.");
+        if ($percent < 0 || $percent > 100) throw new \InvalidArgumentException("argument {$percent} is out of range.");
 
         $currentSymbol = $this->symbols[$this->symbolIndex];
 

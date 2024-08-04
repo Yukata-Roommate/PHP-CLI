@@ -41,7 +41,7 @@ class ArgvInput implements ArgvInputInterface
      * 
      * @param array<string>|array<string, string> $argv
      */
-    function __construct(array $argv = [])
+    public function __construct(array $argv = [])
     {
         $arguments = empty($argv) ? $_SERVER["argv"] : $argv;
 
@@ -115,7 +115,7 @@ class ArgvInput implements ArgvInputInterface
      *----------------------------------------*/
 
     /**
-     * check if the value of the key exists in the arguments property
+     * check if value of key exists in arguments property
      * 
      * @param int|string $name
      * @return bool
@@ -126,7 +126,7 @@ class ArgvInput implements ArgvInputInterface
     }
 
     /**
-     * check if the value of the key is a string in the arguments property
+     * check if value of key is a string in arguments property
      * 
      * @param int|string $name
      * @return bool
@@ -137,7 +137,7 @@ class ArgvInput implements ArgvInputInterface
     }
 
     /**
-     * check if the value of the key is an integer in the arguments property
+     * check if value of key is an integer in arguments property
      * 
      * @param int|string $name
      * @return bool
